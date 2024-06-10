@@ -82,7 +82,6 @@ a:hover {
 
 .img-block:hover {
     cursor: pointer;
-    background-color: ;
     filter: sepia(1) saturate(5000%) hue-rotate(180deg) brightness(1) contrast(1);
 }
 
