@@ -25,11 +25,13 @@ body {
     color: var(--soft-blue);
     font-family: "Outfit", sans-serif;
     font-size: 1rem;
+ 
 
 }
 
 h3 {
     color: var(--white);
+    margin-top: 1rem;
 }
 
 hr {
@@ -52,38 +54,38 @@ a:hover {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: var(--very-dark-blue-b);
     border-radius: 0.5rem;
-    padding: 0.9rem;
+    padding: 1rem;
+    margin: 1rem;
     max-width: 20rem;
 
 }
 
-
 .img-block > img {
     border-radius: 0.5rem;
-    width: 100%;
+    max-width: 18rem;
 }
     
-.img-block > .icon {
-    display: none;
+
+.img-block > .overlay {
     position: absolute;
-    width: 20%;
-    height: 20%;
-    top: 40%;
-    left: 40%;
-}
-
-.img-block:hover > .icon {
-    display: block;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 0.5rem;
+    opacity: 0;
     cursor: pointer;
-    filter: sepia(1) saturate(5000%) hue-rotate(130deg) brightness(1) contrast(1);
-}
+    transition: opacity 0.2s;
+  }
 
-.img-block:hover {
-    cursor: pointer;
-    filter: sepia(1) saturate(5000%) hue-rotate(180deg) brightness(1) contrast(1);
-}
+  .img-block .overlay:hover {
+    opacity: 1;
+  } 
 
 
 .card-footer, .row {
